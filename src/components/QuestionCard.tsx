@@ -7,7 +7,14 @@ type Props = {
   totalQuestions: number;
 };
 
-const QuestionCard: React.FC = () => {
+const QuestionCard: React.FC<Props> = ({
+  question,
+  answer,
+  callback,
+  userAnswer,
+  questionNr,
+  totalQuestions,
+}) => {
   return <div>Question Card</div>;
 };
 

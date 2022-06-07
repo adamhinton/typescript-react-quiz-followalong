@@ -1,5 +1,8 @@
 import React from "react";
 
+// components
+import QuestionCard from "./components/QuestionCard";
+
 const App = () => {
   const startTrivia = async () => {};
 

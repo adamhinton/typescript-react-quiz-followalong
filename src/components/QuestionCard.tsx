@@ -1,6 +1,6 @@
 type Props = {
   question: string;
-  answer: string[];
+  answers: string[];
   callback: any;
   userAnswer: string;
   questionNr: number;

@@ -9,7 +9,7 @@ type Props = {
 
 const QuestionCard: React.FC<Props> = ({
   question,
-  answer,
+  answers,
   callback,
   userAnswer,
   questionNr,

@@ -11,7 +11,7 @@ const QuestionCard: React.FC<Props> = ({
   question,
   answers,
   callback,
-  userAnswer,
+  userAnswer: boolean,
   questionNr,
   totalQuestions,
 }) => {
@@ -21,6 +21,17 @@ const QuestionCard: React.FC<Props> = ({
         Question: {questionNr} / {totalQuestions}
       </p>
       <p dangerouslySetInnerHTML={{ __html: question }} />
+
+      <div>
+        {answers.map((answer) => {
+          return (
+            <div>
+              {" "}
+              <button disabled={userAnswer}></button>{" "}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

@@ -1,3 +1,6 @@
+import { shuffleArray } from "./utils";
+
+
 export type Question = {
   category: string;
   correct_answer: string;
@@ -23,4 +26,8 @@ export const fetchQuizQuestions = async (
 
   const data = await (await fetch(endpoint)).json();
   console.log("data:", data);
+
+  return data.results.map((question: Question) => {
+      {...question , answer: }
+  });
 };

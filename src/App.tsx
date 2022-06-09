@@ -5,6 +5,7 @@ import QuestionCard from "./components/QuestionCard";
 
 const App = () => {
   const [loading, setLoadin] = useState(false);
+  const [questions, setQuestions] = useState([]);
 
   const startTrivia = async () => {};
 

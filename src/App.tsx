@@ -7,6 +7,7 @@ const App = () => {
   const [loading, setLoadin] = useState(false);
   const [questions, setQuestions] = useState([]);
   const [number, setNumber] = useState(0);
+  const [userAnswers, setUserAnswers] = useState([]);
 
   const startTrivia = async () => {};
 

@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import QuestionCard from "./components/QuestionCard";
 
 const App = () => {
+  const [loading, setLoadin] = useState(false);
+
   const startTrivia = async () => {};
 
   const checkAnswer = (e: React.MouseEvent<HTMLButtonElement>) => {};

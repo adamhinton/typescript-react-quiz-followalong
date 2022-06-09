@@ -11,7 +11,7 @@ const QuestionCard: React.FC<Props> = ({
   question,
   answers,
   callback,
-  userAnswer: boolean,
+  userAnswer: any,
   questionNr,
   totalQuestions,
 }) => {

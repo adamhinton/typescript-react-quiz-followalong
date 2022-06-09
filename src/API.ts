@@ -31,7 +31,7 @@ export const fetchQuizQuestions = async (
     return {
       ...question,
       answer: shuffleArray([
-        ...question.incorrect_answer,
+        ...question.incorrect_answers,
         question.correct_answer,
       ]),
     };

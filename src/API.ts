@@ -1,5 +1,5 @@
+import QuestionCard from "./components/QuestionCard";
 import { shuffleArray } from "./utils";
-
 
 export type Question = {
   category: string;
@@ -28,6 +28,12 @@ export const fetchQuizQuestions = async (
   console.log("data:", data);
 
   return data.results.map((question: Question) => {
-      {...question , answer: }
+    return {
+      ...question,
+      answer: shuffleArray([
+        ...question.incorrect_answer,
+        question.correct_answer,
+      ]),
+    };
   });
 };

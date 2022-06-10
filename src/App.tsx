@@ -17,7 +17,7 @@ type AnswerObject = {
 const TOTAL_QUESTIONS = 10;
 
 const App = () => {
-  const [loading, setLoadin] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [questions, setQuestions] = useState<QuestionState[]>([]);
   const [number, setNumber] = useState(0);
   const [userAnswers, setUserAnswers] = useState<AnswerObject[]>([]);

@@ -59,14 +59,14 @@ const App = () => {
 
       {loading ? <p>Loading Questions...</p> : null}
 
-      {/* <QuestionCard
+      <QuestionCard
         questionNr={number + 1}
         totalQuestions={TOTAL_QUESTIONS}
         question={questions[number].question}
         answers={questions[number].answers}
         userAnswer={userAnswers ? userAnswers[number] : undefined}
         callback={checkAnswer}
-      /> */}
+      />
       <button className="next" onClick={nextQuestion}>
         Next Question
       </button>

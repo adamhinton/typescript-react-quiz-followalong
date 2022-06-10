@@ -24,6 +24,8 @@ const App = () => {
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(false);
 
+  console.log("questions:", questions);
+
   const startTrivia = async () => {
     setLoading(true);
     setGameOver(false);

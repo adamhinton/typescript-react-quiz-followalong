@@ -22,8 +22,10 @@ const App = () => {
   const [number, setNumber] = useState(0);
   const [userAnswers, setUserAnswers] = useState<AnswerObject[]>([]);
   const [score, setScore] = useState(0);
-  const [gameOver, setGameOver] = useState(false);
+  const [gameOver, setGameOver] = useState(true);
 
+  // console.log("questions:", questions);
+  console.log("number:", number);
   console.log("questions:", questions);
 
   const startTrivia = async () => {
@@ -50,7 +52,13 @@ const App = () => {
     <div className="App">
       <h1>REACT QUIZ</h1>
       {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
-        <button className="start" onClick={startTrivia}>
+        <button
+          className="start"
+          onClick={() => {
+            console.log("starting");
+            startTrivia();
+          }}
+        >
           Start
         </button>
       ) : null}
@@ -79,4 +87,4 @@ const App = () => {
 
 export default App;
 
-// 20:51
+// 47 05

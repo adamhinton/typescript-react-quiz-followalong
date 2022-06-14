@@ -24,10 +24,6 @@ const App = () => {
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(true);
 
-  // console.log("questions:", questions);
-  console.log("number:", number);
-  console.log("questions:", questions);
-
   const startTrivia = async () => {
     setLoading(true);
     setGameOver(false);
@@ -55,7 +51,6 @@ const App = () => {
         <button
           className="start"
           onClick={() => {
-            console.log("starting");
             startTrivia();
           }}
         >

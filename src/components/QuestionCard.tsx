@@ -15,7 +15,6 @@ const QuestionCard: React.FC<Props> = ({
   questionNr,
   totalQuestions,
 }) => {
-  console.log("answers:", answers);
   return (
     <div>
       <p className="number">
